@@ -81,13 +81,13 @@ export const calculateTrainingZones = (formData) => {
         const paceMax = Math.floor(paceSecondsMax / 60);
         const paceSecMax = Math.round(paceSecondsMax % 60);
         // Formatear el pace máximo.
-        const paceFormattedMax = `${paceMax}:${paceSecMax < 10 ? '0' : ''}${paceSecMax} min/km`;
+        const paceFormattedMax = `${paceMax}:${paceSecMax < 10 ? '0' : ''}${paceSecMax}`; //si quiere mostrar min/km
 
         // Retorna un objeto con el nombre de la zona, el rango de FC y el rango de pace.
         return {
             zone: `Zone ${index + 1}`,
-            hr: `${minHR} - ${maxHR} bpm`,
-            pace: `${paceFormattedMin} - ${paceFormattedMax}`,
+            hr: `${minHR}-${maxHR}`, //si se quiere mostrar bpm
+            pace: `${paceFormattedMin}-${paceFormattedMax}`,
         };
     });
 
