@@ -38,9 +38,9 @@ export const Results = forwardRef(({ zones, name }, ref) => {
                         {/*Encabezado de la tabla */}
                         <thead>
                             <tr>
-                                <th className="bg-white text-blue-700 font-bold py-2 px-4 rounded w-1/3">Zones</th>
-                                <th className="bg-white text-blue-700 font-bold py-2 px-4 rounded w-1/3">FC - BPM</th>
-                                <th className="bg-white text-blue-700 font-bold py-2 px-4 rounded w-1/3">Pace - min/km</th>
+                                <th className="bg-white text-blue-700 font-bold py-2 px-3 rounded w-1/3">Zones</th>
+                                <th className="bg-white text-blue-700 font-bold py-2 px-3 rounded w-1/3">HR (bpm)</th>
+                                <th className="bg-white text-blue-700 font-bold py-2 px-3 rounded w-1/3">Pace (min/km)</th>
                             </tr>
                         </thead>
 
