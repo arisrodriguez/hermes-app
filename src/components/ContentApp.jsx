@@ -22,7 +22,7 @@ export const ContentApp = ({ onCalculate }) => {
     };
 
     return (
-        <section className='my-16 px-6 md:px-0 md:flex md:gap-5 m-auto w-full max-w-[700px]'>
+        <section className='my-16 mx-auto flex w-full max-w-[700px] flex-col gap-5 px-6 md:flex-row md:items-center md:px-0'>
             {/* Componente que muestra la descripción de la aplicación */}
             <DescriptionApp />
 
