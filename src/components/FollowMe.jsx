@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaInstagramSquare, FaYoutube, FaDiscord } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
