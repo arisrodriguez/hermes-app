@@ -1,4 +1,3 @@
-import React from 'react'
 import { DescriptionApp } from './DescriptionApp'
 import { PaceForm } from './PaceForm'
 
