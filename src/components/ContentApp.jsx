@@ -15,10 +15,6 @@ export const ContentApp = ({ onCalculate }) => {
      * 
      * @param {Object} formData - Datos del formulario incluyendo el nombre y las zonas calculadas.
      */
-    const handleFormSubmit = (formData) => {
-        const { name, ...rest } = formData;
-        onCalculate(rest.zones, name); // Pasar el nombre junto con las zonas calculadas
-    };
 
     return (
         <section className='my-16 mx-auto flex w-full max-w-[700px] flex-col gap-5 px-6 md:flex-row md:items-center md:px-0'>
