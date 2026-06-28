@@ -9,7 +9,6 @@ import { calculateTrainingZones } from '../calculations/PaceFormatLogic'
  * @param {Function} onCalculate - Función que recibe las zonas de entrenamiento calculadas y el nombre del usuario.
  */
 
-// eslint-disable-next-line react/prop-types
 export const PaceForm = ({ onCalculate }) => {
     // Estado para almacenar los datos del formulario
     const [formData, setFormData] = useState({
