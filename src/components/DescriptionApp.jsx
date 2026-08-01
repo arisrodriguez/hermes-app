@@ -2,12 +2,12 @@
  * Componente DescriptionApp que proporciona una breve descripción de Hermes App.
  * Contiene un título y un párrafo explicativo sobre la funcionalidad de la aplicación.
  */
-import { FaArrowDown, FaBolt, FaChartLine } from "react-icons/fa";
+import { FaArrowDown, FaBolt, FaChartLine, FaArrowRight } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 export const DescriptionApp = () => {
   return (
-    <section className="relative">
+    <section className="relative flex flex-col items-center text-center md:items-center md:text-center lg:items-start lg:text-left">
       <div className="mb-8 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-blue-700">
         <span className="h-2 w-2 rounded-full bg-yellow-400" />
         Personal training intelligence
@@ -47,22 +47,24 @@ export const DescriptionApp = () => {
         </div>
       </div>
 
-      <a
-        href="#Form"
-        className="mt-8 inline-flex items-center gap-3 rounded-full bg-blue-700 px-6 py-3.5 font-bold text-white shadow-lg shadow-blue-700/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-800"
-      >
-        Start your calculation
-        <span aria-hidden="true">-&gt;</span>
-      </a>
+      <div className="mt-8 flex flex-col items-center gap-5 text-center sm:flex-row sm:items-center md:items-center md:text-center lg:flex-row lg:items-center lg:text-left">
+        <a
+          href="#Form"
+          className="inline-flex items-center gap-3 rounded-full bg-blue-700 px-6 py-3.5 font-bold text-white shadow-lg shadow-blue-700/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-800"
+        >
+          Start your calculation
+          <FaArrowRight className="text-sm" aria-hidden="true" />
+        </a>
 
-      <a
-        href="/Hermes_Guia_Testers.pdf"
-        download
-        className="ml-5 inline-flex items-center gap-2 text-sm font-bold text-slate-600 transition-colors hover:text-blue-700"
-      >
-        <MdOutlineFileDownload className="text-lg" aria-hidden="true" />
-        Testing guide
-      </a>
+        <a
+          href="/Hermes_Guia_Testers.pdf"
+          download
+          className="inline-flex items-center gap-2 text-sm font-bold text-slate-600 transition-colors hover:text-blue-700"
+        >
+          <MdOutlineFileDownload className="text-lg" aria-hidden="true" />
+          Testing guide
+        </a>
+      </div>
     </section>
   );
 };
